@@ -20,7 +20,7 @@
 ```python3 -m venv venv```
  
 Можно его активировать для установки библиотек и т.д.  
-```source env/bin/activate```
+```source venv/bin/activate```
 
 Качаем нужные библиотеки из файла  
 ```pip install -r requirements.txt```
@@ -41,18 +41,18 @@
 (Служба сама перезапускается в случае ошибки в ней и псоле перезапуска сервера)  
 
 ```
-[Unit]  
-Description=Название службы  
-[Service]  
-User=root  
-Group=root  
-Type=simple  
-Restart=always  
-WorkingDirectory=/root/Папка с ботом  
-ExecStart=/root/ПАПКА С БОТОМ/venv/bin/python /root/ПАПКА С БОТОМ/main.py  
-RestartSec=10  
-Restart=always  
-[Install]  
+[Unit]
+Description=Название службы
+[Service]
+User=root
+Group=root
+Type=simple
+Restart=always
+WorkingDirectory=/root/Папка с ботом
+ExecStart=/root/ПАПКА С БОТОМ/venv/bin/python /root/ПАПКА С БОТОМ/main.py
+RestartSec=10
+Restart=always
+[Install]
 WantedBy=multi-user.target
 ```
 Чтобы сохранить  
