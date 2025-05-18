@@ -72,6 +72,8 @@ CTL+X -> Y -> Enter
 Можно установить часовой пояс на сервере  
 ```sudo timedatectl set-timezone Europe/Moscow```
 
-
 Если мы внесли в файл службы изменения, то нужно её обновить  
 ```systemctl daemon-reload```
+
+Просмотр всех служб
+```systemctl list-units --type=service```
