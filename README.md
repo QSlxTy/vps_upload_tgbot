@@ -75,5 +75,5 @@ CTL+X -> Y -> Enter
 Если мы внесли в файл службы изменения, то нужно её обновить  
 ```systemctl daemon-reload```
 
-Просмотр всех служб
+Просмотр всех служб   
 ```systemctl list-units --type=service```
